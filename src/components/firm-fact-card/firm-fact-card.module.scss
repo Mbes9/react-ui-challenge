@@ -1,0 +1,28 @@
+.firmFactCard {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+  transition: all 0.3s ease;
+  min-height: 10rem;
+  background-color: var(--white-color, #fff);
+
+  &.default {
+    &:hover {
+      background-color: var(--secondary-color);
+    }
+  }
+
+  &.border {
+    border: 1rem solid var(--white-color, #fff);
+
+    &:hover {
+      border-color: var(--secondary-color);
+    }
+  }
+
+  &:hover {
+    button:not(:disabled) {
+      background-color: var(--secondary-color);
+    }
+  }
+}
